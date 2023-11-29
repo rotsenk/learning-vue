@@ -2,7 +2,8 @@
   <HeaderComponent></HeaderComponent>
   <SliderComponent></SliderComponent>
   <div class="center">
-    <LastArticles></LastArticles>
+    <!-- <LastArticles></LastArticles> -->
+    <router-view></router-view>
     <SidebarComponent></SidebarComponent>
   </div>
   <FooterComponent></FooterComponent>
@@ -11,7 +12,6 @@
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
 import SliderComponent from "./components/SliderComponent.vue";
-import LastArticles from "./components/LastArticles.vue";
 import SidebarComponent from "./components/SidebarComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 
@@ -21,8 +21,7 @@ export default {
     HeaderComponent,
     SliderComponent,
     SidebarComponent,
-    LastArticles,
-    FooterComponent,
+    FooterComponent
   },
 };
 </script>
