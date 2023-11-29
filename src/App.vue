@@ -1,17 +1,30 @@
 <template>
   <HeaderComponent></HeaderComponent>
+  <SliderComponent></SliderComponent>
+  <div class="center">
+    <LastArticles></LastArticles>
+    <SidebarComponent></SidebarComponent>
+  </div>
+  <FooterComponent></FooterComponent>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue'
-
+import HeaderComponent from "./components/HeaderComponent.vue";
+import SliderComponent from "./components/SliderComponent.vue";
+import LastArticles from "./components/LastArticles.vue";
+import SidebarComponent from "./components/SidebarComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HeaderComponent
-  }
-}
+    HeaderComponent,
+    SliderComponent,
+    SidebarComponent,
+    LastArticles,
+    FooterComponent,
+  },
+};
 </script>
 
 <style>
@@ -24,5 +37,5 @@ export default {
   margin-top: 60px;
 } */
 
-@import './assets/css/styles.css';
+@import "./assets/css/styles.css";
 </style>
