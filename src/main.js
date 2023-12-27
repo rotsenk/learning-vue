@@ -13,7 +13,7 @@ const routes = [
     { path: '/ultimos-articulos', component: LastArticles },
     { path: '/blog', component: BlogComponent },
     { path: '/formulario', component: FormComponent },
-    { path: '/pagina', component: PaginaComponent },
+    { path: '/pagina/:id?', name: 'pagina', component: PaginaComponent },
     { path: '/', component: LastArticles }
 ];
 
