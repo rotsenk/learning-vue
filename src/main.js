@@ -5,6 +5,7 @@ import LastArticles from './components/LastArticles.vue';
 import BlogComponent from './components/BlogComponent.vue';
 import FormComponent from './components/FormComponent.vue';
 import PaginaComponent from './components/PaginaComponent.vue';
+import ErrorComponent from './components/ErrorComponent.vue';
 
 const app = createApp(App);
 
@@ -14,7 +15,8 @@ const routes = [
     { path: '/blog', component: BlogComponent },
     { path: '/formulario', component: FormComponent },
     { path: '/pagina/:id?', name: 'pagina', component: PaginaComponent },
-    { path: '/', component: LastArticles }
+    { path: '/', component: LastArticles },
+    { path: '/:catchAll(.*)', component: ErrorComponent }
 ];
 
 const router = createRouter({
